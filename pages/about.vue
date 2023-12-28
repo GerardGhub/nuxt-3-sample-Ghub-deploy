@@ -5,11 +5,12 @@
             pariatur odio saepe placeat, nesciunt quia exercitationem reiciendis. Cupiditate delectus distinctio quidem
             vero, quasi numquam.
         </p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/currency/GBP')
 </script>
 
 <style scoped>
